@@ -1,1 +1,7 @@
 #Hola
+services:
+  anagrams:
+    image: lolalestau/ibm-anagrams:latest
+    volumnes:
+      - /tmp/ibm-anagrams/data:/data:ro
+version: '3.8'
