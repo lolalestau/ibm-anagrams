@@ -2,6 +2,6 @@
 services:
   anagrams:
     image: lolalestau/ibm-anagrams:latest
-    volumnes:
+    volumes:
       - /tmp/ibm-anagrams/data:/data:ro
 version: '3.8'
