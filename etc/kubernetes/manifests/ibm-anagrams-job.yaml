@@ -40,11 +40,11 @@ spec:
                 mountPath: /downloads
                 name: ibm-anagrams-volume
                 readOnly: false
-        restartPolicy: OnFailure
-        volumes:
-          -
-            #emptyDir: {}
-            name: ibm-anagrams-volume
-            persistentVolumeClaim: 
-              claimName: ibm-anagrams-pvc
-              readonly: false
+          restartPolicy: OnFailure
+          volumes:
+            -
+              #emptyDir: {}
+              name: ibm-anagrams-volume
+              persistentVolumeClaim: 
+                claimName: ibm-anagrams-pvc
+                readonly: false
