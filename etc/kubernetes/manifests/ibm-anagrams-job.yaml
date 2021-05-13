@@ -33,9 +33,9 @@ spec:
                 secretKeyRef:
                   key: url
                   name: ibm-anagams-secret
-              image: busybox
-              name: ibm-anagrams-initcontainer
-              volumeMounts:
+          image: busybox
+          name: ibm-anagrams-initcontainer
+          volumeMounts:
               -
                 mountPath: /downloads
                 name: ibm-anagrams-volume
